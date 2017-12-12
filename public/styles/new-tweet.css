@@ -59,7 +59,7 @@ article header h2 {
   font-size: 1.5em;
 }
 
-article header p {
+article header span {
   text-align: right;
   float: right;
   margin-top: -40px;
@@ -87,10 +87,10 @@ article.tweet:hover {
 article.tweet div.icons {
   opacity: 0;
   float: right;
-  padding-bottom: 10px;
+
 }
 article.tweet:hover div.icons {
   opacity: 1;
   float: right;
-  padding-bottom: 10px;
+  margin-top: -15px;
 }
