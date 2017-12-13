@@ -78,7 +78,7 @@ article footer {
   margin-bottom: 5px;
   border: 1px solid #6b556b;
   background-color: #d2e1f1;
-  padding: 5px;
+  padding: 15px 5px;
 }
 
 article.tweet:hover {
@@ -92,5 +92,5 @@ article.tweet div.icons {
 article.tweet:hover div.icons {
   opacity: 1;
   float: right;
-  margin-top: -15px;
+  margin-top: -5px;
 }
