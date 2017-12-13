@@ -1,4 +1,14 @@
-#nav-bar {
+/*~colour palette~
+lighthouse colours:
+header bg: #00a087 (green)
+header text: #e8fdff (pale blue)
+my colours:
+body bg: #d8bfd8 (thistle)
+body bg: #a8bfd8 (lt blue)
+border: #6b556b (dk purple)
+tweet bg: #eee (gray)
+*/
+nav {
     position: fixed;
     padding: 0 2em;
     background-color: #00a087;
@@ -8,10 +18,9 @@
     margin-top: 0px;
     top: 0px;
     z-index: 4;
-
 }
 
-#nav-bar .header {
+nav .header {
     font-size: 2em;
     margin-left: 10px;
     float: left;
@@ -19,8 +28,26 @@
     text-align: center;
 }
 
-#nav-bar .logo {
+nav .logo {
   width: 80px;
   height: 80px;
   float: left;
+}
+
+.compose-button {
+  float: right;
+  border-radius: 5px;
+  border: 2px solid black;
+  height: 2.75em;
+  width: 8em;
+  margin-top: 8px;
+  font-weight: bold;
+  font-size: 1.5em;
+  background-color: #eee;
+}
+
+.compose-button:hover {
+  border: 2px solid #6b556b;
+  background-color: #e8fdff;
+  color: #00a087;
 }

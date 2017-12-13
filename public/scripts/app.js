@@ -5,6 +5,12 @@
  */
 //$( document ).ready(function () {
 $(document).ready(function() {
+  $( "textarea").focus();
+
+$( ".compose-button" ).click(function() {
+  $( ".new-tweet" ).slideToggle( "slow" );
+  $( "textarea").focus();
+});
 
   function renderTweets(data) {
     data.forEach(function(tweetData) {
@@ -54,7 +60,7 @@ function createTweetElement(tweetData) {  //takes a tweet object, returns an <ar
           })
       }
       loadTweets();
-
+//submit tweet -error handling included
   $(".tweets").on("submit", function(event) {
     const tweetForm = $(".tweets");
     const finishedTweet = $("textarea").val();
