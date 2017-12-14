@@ -38,7 +38,7 @@ function createTweetElement(tweetData) {  //takes a tweet object, returns an <ar
             <p>${escape(tweetData.content.text)}</p>
         </div>
         <footer>
-            <span class="date-added">${tweetData.created_at}</span>
+            <span class="date-added">${moment(tweetData.created_at).fromNow()}</span>
             <div class="icons">
               <i class="fa fa-flag" aria-hidden="true"></i>
               <i class="fa fa-retweet" aria-hidden="true"></i>
@@ -75,10 +75,12 @@ function createTweetElement(tweetData) {  //takes a tweet object, returns an <ar
         url: "/tweets",
         method: "POST",
         data: $(this).serialize(),
+
       })
           .done(function(){
             tweetForm[0].reset();
             $('.counter').html('140');
+            location.reload();
           loadTweets();
         })
       }

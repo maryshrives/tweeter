@@ -6,6 +6,5 @@ $(document).ready(function() {
       $(this).siblings(".counter")
         .text(tweetCount)
         .css("color", color);
-        console.log(tweetCount + " characters left");
   });
 });
