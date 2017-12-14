@@ -84,13 +84,57 @@ article footer {
 article.tweet:hover {
   opacity: 0.8;
 }
-article.tweet div.icons {
+article.tweet .icons {
   opacity: 0;
   float: right;
 
 }
-article.tweet:hover div.icons {
+article.tweet:hover .icons {
   opacity: 1;
   float: right;
   margin-top: -5px;
+}
+/*some basic responsive design:*/
+@media (min-width: 450px) and (max-width: 800px) {
+  textarea {
+    height: 100px;
+  }
+  input {
+    width: 80px;
+    height: 40px;
+  }
+  .tweets {
+    font-size: 1.5em;
+  }
+  #posted-tweets {
+    font-size: 1.25em;
+    margin: -10px;
+  }
+  article header img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+  article header span {
+    margin-top: -35px;
+  }
+}
+@media (max-width: 449px) {
+  section.new-tweet {
+    margin: 0;
+  }
+  article.tweet {
+    margin: 8px 0;
+  }
+  article header span {
+    float: right;
+    margin-top: -35px;
+  }
+  div.tweet-text {
+    font-size: 1.5em;
+  }
+  input {
+  width: 80px;
+  height: 40px;
+  }
 }

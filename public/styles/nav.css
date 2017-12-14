@@ -51,3 +51,8 @@ nav .logo {
   background-color: #e8fdff;
   color: #00a087;
 }
+@media (max-width: 449px) {
+  .compose-button {
+    width: 4.5em;
+  }
+}

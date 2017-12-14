@@ -28,7 +28,18 @@ body {
 
 main.container {
   width: 450px;
-  margin: 140px auto 0;
+  margin: 120px auto 0;
   padding: 5px;
-  background-color: white;
+  background-color: #d8bfd8;
+}
+/*some basic responsive design:*/
+@media (max-width: 800px) {
+  main.container {
+    width: 75%;
+  }
+}
+@media (max-width: 800px) {
+  main.container {
+  width: 90%;
+  }
 }
