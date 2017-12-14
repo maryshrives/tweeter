@@ -17,14 +17,9 @@ html {
 body {
   margin: 0;
   color: #244751;
-  /*background-color: #eee;*/
   background: linear-gradient(to left top, #d8bfd8, #a8bfd8);
   font-family: 'Roboto Condensed', sans-serif;
 }
-
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
 
 main.container {
   width: 450px;

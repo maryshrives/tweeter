@@ -51,12 +51,12 @@ function createTweetElement(tweetData) {  //takes a tweet object, returns an <ar
 }
   function loadTweets() {
           $.ajax({
-              url: "/tweets",
-              method: "GET",
-              dataType: "json",
+            url: "/tweets",
+            method: "GET",
+            dataType: "json",
           })
           .done(function(tweets){
-              renderTweets(tweets)
+            renderTweets(tweets)
           })
       }
       loadTweets();
@@ -72,28 +72,17 @@ function createTweetElement(tweetData) {  //takes a tweet object, returns an <ar
       } else {
 
         $.ajax({
-        url: "/tweets",
-        method: "POST",
-        data: $(this).serialize(),
+          url: "/tweets",
+          method: "POST",
+          data: $(this).serialize(),
 
       })
-          .done(function(){
-            tweetForm[0].reset();
-            $('.counter').html('140');
-            location.reload();
-          loadTweets();
+        .done(function(){
+          tweetForm[0].reset();
+          $('.counter').html('140');
+          location.reload();
+        loadTweets();
         })
       }
     });
 });
-
-
-
-
-
-
-
-
-
-
-
