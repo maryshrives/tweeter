@@ -5,11 +5,13 @@ Tell the world what's happening in 140 characters or less!
 
 ## Screenshots
 ### Main page of Tweeter
-(https://github.com/maryshrives/tweeter/blob/master/docs/tweeter-fresh-page.png?raw=true)
+![Main page](https://github.com/maryshrives/tweeter/blob/master/docs/tweeter-fresh-page.png?raw=true)
 ### Hovering over a posted tweet
-(https://github.com/maryshrives/tweeter/blob/master/docs/tweeter-hover.png?raw=true)
+![Hover](https://github.com/maryshrives/tweeter/blob/master/docs/tweeter-hover.png?raw=true)
 ### Going over the character count
-(https://github.com/maryshrives/tweeter/blob/master/docs/tweeter-counter.png?raw=true)
+![Tweet is too long!](https://github.com/maryshrives/tweeter/blob/master/docs/tweeter-counter.png?raw=true)
+### Tweeter's responsive design for narrow screens
+![Narrower than 450px](https://github.com/maryshrives/tweeter/blob/master/docs/narrow-screen.png?raw=true)
 
 ## Getting Started
 
